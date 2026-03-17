@@ -8,7 +8,7 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial() {
 exibirTexto('h1','Jogo do Número Secreto');
-exibirTexto('p', 'Escolha um número entre 1 e 100')
+exibirTexto('p', 'Escolha um número entre 1 e 150')
 }
 
 exibirMensagemInicial();
@@ -33,7 +33,7 @@ function verificarChute() {
     }
 
 function gerarNumero() {
-    return parseInt(Math.random() * 100 + 1)
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1)
  } 
  function limparCampo() {
     chute = document.querySelector('input');
